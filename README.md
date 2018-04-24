@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rvelaz/jdslUnit.svg?branch=master)](https://travis-ci.org/rvelaz/jdslUnit)
+
 This is an example of how Jenkins JobDSL can be used in Groovy classes instead of in Groovy scripts. 
 There are mainly two advantages to this:
 

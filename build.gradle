@@ -4,6 +4,7 @@ apply plugin: "jacoco"
 
 sourceCompatibility = '1.8'
 description = "Jenkins Jobs using groovy"
+mainClassName="jdsl"
 
 sourceSets {
     main {
