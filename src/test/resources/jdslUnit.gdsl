@@ -1,0 +1,8 @@
+def ctx = context(ctype: "javaposse.jobdsl.dsl.Job")
+contributor(ctx) {
+    method(name: 'hasDescription', type: 'Object', params: [description:java.lang.String], doc: 'Job has description')
+    method(name: 'keepsLogs', type: 'Object', params: [java.lang.Integer], doc: 'Job keeps X number of jobs')
+    method(name: 'keepsSystemVariables', type: 'Object', params: [], doc: 'Job keeps System variables')
+    method(name: 'keepsBuildVariables', type: 'Object', params: [], doc: 'Job keeps Build variables')
+    method(name: 'hasSCM', type: 'jdslUnit.node.SCM', params: [], doc: 'Job configures Git repository')
+}
