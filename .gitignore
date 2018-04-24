@@ -4,4 +4,3 @@ bin/
 build/
 out/
 .project
-gradle/
