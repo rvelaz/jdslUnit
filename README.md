@@ -22,7 +22,7 @@ This is static and usually does not need to change.
 It can be found in: seed-jobs/seed.groovy
 
 
-##Builder scripts
+## Builder scripts
 They are defined in dsl/pipeline and they simple call a method in the job builders class. To add more
 jobs just simply add them there. Here's an example:
 
@@ -66,7 +66,7 @@ This is a simple example, but it get trickier with more complex objects:
 
 This is impossible to remember and leads to copy pasting and lots of mistakes. 
 
-###JdslUnit
+### JdslUnit
 In order to simplify writing unit tests using the Spock framework for for job builders I've defined a Spock extension 
 (jdslUnit.JdslUnitExtension). The extension checks the classes that implement the *JdslUnitObjectExtension* interface
 and dynamically adds new methods to the *javaposse.jobdsl.dsl.Job* class that can be used in testing. Following the
