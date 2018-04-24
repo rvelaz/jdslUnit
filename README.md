@@ -4,7 +4,7 @@ There are mainly two advantages to this:
 * Re-usability: Jenkins jobs builders are defined as classes and as such can be parametrised and reused.
 * Unit tests: Unit tests can be written to test the jobs are configured in the way they should.
 
-#Setup
+# Setup
 
 The project is composed of three main parts:
 
@@ -12,7 +12,7 @@ The project is composed of three main parts:
 * builder scripts: simple scripts that build views and jobs
 * job builders: Groovy classes that define how to build jobs
 
-##Seed job
+## Seed job
 
 It can be part of the provisioning of Jenkins, it does two things:
 * defines a credential with permissions to connect to Github 
@@ -31,11 +31,11 @@ CISeedJobUnitTestJobBuilder ciSeedJobUnitTestJobBuilder = new CISeedJobUnitTestJ
 ciSeedJobUnitTestJobBuilder.build()
 ```
 
-##Job builders
+## Job builders
 They are Groovy classes with a build method that uses JobDSL to define jobs.
 
 
-##Unit testing
+## Unit testing
 
 What JobDSL does is it allows to modify the XML object that represents a job. Let's see an example:
 
